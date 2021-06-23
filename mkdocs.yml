@@ -8,3 +8,9 @@ theme:
 
 extra_css:
   - stylesheets/colors.css
+
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.superfences
