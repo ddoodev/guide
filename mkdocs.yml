@@ -1,10 +1,23 @@
 site_name: Discordoo Guide
-site_url: https://docs.discordoo.xyz
+site_url: ''
 
 theme:
   name: material
   logo: assets/logo.svg
   favicon: assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: ddoo-light
+      toggle:
+        icon: fontawesome/regular/moon
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: ddoo-light
+      toggle:
+        icon: fontawesome/regular/moon
+        name: Switch to light mode
+  features:
+    - navigation.sections
 
 extra_css:
   - stylesheets/colors.css
