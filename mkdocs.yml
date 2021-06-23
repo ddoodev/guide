@@ -1,0 +1,10 @@
+site_name: Discordoo Guide
+site_url: https://docs.discordoo.dev
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.png
+
+extra_css:
+  - stylesheets/colors.css
