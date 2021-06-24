@@ -5,6 +5,7 @@ theme:
   name: material
   logo: assets/logo.svg
   favicon: assets/favicon.png
+  custom_dir: docs/overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: ddoo-light
@@ -12,7 +13,7 @@ theme:
         icon: fontawesome/regular/moon
         name: Switch to dark mode
     - media: "(prefers-color-scheme: light)"
-      scheme: ddoo-light
+      scheme: ddoo-dark
       toggle:
         icon: fontawesome/regular/moon
         name: Switch to light mode

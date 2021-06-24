@@ -15,5 +15,11 @@
 }
 
 [data-md-color-scheme="ddoo-dark"] {
-    --md-primary-fg-color: #94f799
+    --md-primary-fg-color: #fa7272;
+
+    --md-footer-fg-color: var(--shrimp);
+    --md-footer-fg-color--light: #fdb9b9;
+    --md-footer-fg-color--lighter: #fdb9b9;
+    --md-footer-bg-color: #fcf3f3;
+    --md-footer-bg-color--dark: #ffefef;
 }
