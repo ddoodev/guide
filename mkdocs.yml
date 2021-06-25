@@ -1,5 +1,9 @@
 site_name: Discordoo Guide
-site_url: ''
+site_url: 'https://docs.discordoo.xyz'
+
+plugins:
+  - search
+  - awesome-pages
 
 theme:
   name: material
@@ -19,6 +23,11 @@ theme:
         name: Switch to light mode
   features:
     - navigation.sections
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
 
 extra_css:
   - stylesheets/colors.css
@@ -28,3 +37,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.superfences
+  - meta
+  - toc:
+      permalink: '#'

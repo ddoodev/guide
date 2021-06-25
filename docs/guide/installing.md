@@ -2,7 +2,7 @@
 In this step, you will know how to install Discordoo.
 
 Discordoo is hosted on npm and located under `discordoo` package. It contains the core of the library. However, it is
-highly recommended to create a new project from zero.
+highly recommended creating a new project from zero.
 
 To do it, execute the following script in a **new** directory:
 
