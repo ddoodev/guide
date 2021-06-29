@@ -1,11 +1,18 @@
 :root {
     --shrimp: #f79494;
+    --shrimp-transparent: rgba(247, 148, 148, 0.6);
+    --shrimp-light: #fcb8b8;
     --black-text: #4C4C4C;
     --grey-text: #717171;
 }
 
 [data-md-color-scheme="ddoo-light"] {
     --md-primary-fg-color: #f68888;
+
+    --md-accent-fg-color:                var(--shrimp);
+    --md-accent-fg-color--transparent:   var(--shrimp-transparent);
+    --md-accent-bg-color:                var(--shrimp);
+    --md-accent-bg-color--light:         var(--shrimp-light);
 
     --md-footer-fg-color: var(--shrimp);
     --md-footer-fg-color--light: #fdb9b9;
@@ -15,11 +22,43 @@
 }
 
 [data-md-color-scheme="ddoo-dark"] {
-    --md-primary-fg-color: #fa7272;
+    --md-primary-fg-color: #0B0B0B;
 
-    --md-footer-fg-color: var(--shrimp);
-    --md-footer-fg-color--light: #fdb9b9;
-    --md-footer-fg-color--lighter: #fdb9b9;
-    --md-footer-bg-color: #fcf3f3;
-    --md-footer-bg-color--dark: #ffefef;
+    --md-default-fg-color: #c1c1c1;
+    --md-default-fg-color--light: #dedede;
+    --md-default-fg-color--lighter: #ececec;
+    --md-default-fg-color--lightest: #ffffff;
+    --md-default-bg-color: #131313;
+    --md-default-bg-color--light:        #c1c1c1;
+    --md-default-bg-color--lighter:      #c1c1c1;
+    --md-default-bg-color--lightest:     #c1c1c1;
+
+    --md-accent-fg-color:                var(--shrimp);
+    --md-accent-fg-color--transparent:   var(--shrimp-transparent);
+    --md-accent-bg-color:                var(--shrimp);
+    --md-accent-bg-color--light:         var(--shrimp-light);
+
+    --md-typeset-color:                var(--md-default-fg-color);
+
+    --md-typeset-a-color:              var(--shrimp);
+
+    --md-typeset-mark-color:           var(--shrimp);
+
+    --md-typeset-kbd-color:            hsla(0, 0%, 98%, 1);
+    --md-typeset-kbd-accent-color:     var(--shrimp);
+    --md-typeset-kbd-border-color:     hsla(0, 0%, 72%, 1);
+
+    --md-admonition-fg-color:          var(--md-default-fg-color);
+    --md-admonition-bg-color:          var(--md-default-bg-color);
+
+    --md-primary-fg-color--light: #e7e7e7;
+    --md-primary-fg-color--dark: hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color--light:        #e7e7e7;
+
+    --md-footer-fg-color: #cecece;
+    --md-footer-fg-color--light: #ffffff;
+    --md-footer-fg-color--lighter: #cecece;
+    --md-footer-bg-color: #0c0c0c;
+    --md-footer-bg-color--dark: #0B0B0B;
 }

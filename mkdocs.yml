@@ -16,10 +16,10 @@ theme:
       toggle:
         icon: fontawesome/regular/moon
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: light)"
+    - media: "(prefers-color-scheme: dark)"
       scheme: ddoo-dark
       toggle:
-        icon: fontawesome/regular/moon
+        icon: material/lightbulb
         name: Switch to light mode
   features:
     - navigation.sections
