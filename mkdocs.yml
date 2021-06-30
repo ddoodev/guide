@@ -41,3 +41,4 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: '#'
+      toc_depth: 3
