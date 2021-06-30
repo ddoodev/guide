@@ -21,13 +21,135 @@
     --md-footer-bg-color--dark: #ffefef;
 }
 
+[data-md-color-scheme="ddoo-oceanic"] {
+    --md-default-fg-color:               hsla(0, 0%, 90%, 0.87);
+    --md-default-fg-color--light:        hsla(0, 0%, 90%, 0.54);
+    --md-default-fg-color--lighter:      hsla(0, 0%, 90%, 0.32);
+    --md-default-fg-color--lightest:     hsla(0, 0%, 90%, 0.07);
+    --md-default-bg-color:               #1E272C;
+    --md-default-bg-color--light:        hsla(0, 0%, 20%, 0.7);
+    --md-default-bg-color--lighter:      hsla(0, 0%, 20%, 0.3);
+    --md-default-bg-color--lightest:     hsla(0, 0%, 20%, 0.12);
+
+    --md-primary-fg-color:               #263238;
+    --md-primary-fg-color--light:        hsla(0, 0%, 20%, 0.7);
+    --md-primary-fg-color--dark:         hsla(0, 0%, 20%, 0.7);
+    --md-primary-bg-color:               hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
+
+    --md-accent-fg-color:                var(--shrimp);
+    --md-accent-fg-color--transparent:   var(--shrimp-transparent);
+    --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+
+    --md-code-fg-color:                var(--md-default-fg-color);
+    --md-code-bg-color:                var(--md-primary-fg-color);
+
+    --md-code-hl-color:                #C3CEE3;
+    --md-code-hl-number-color:         #F68B61;
+    --md-code-hl-special-color:        hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color:       hsla(291, 45%, 50%, 1);
+    --md-code-hl-constant-color:       #F68B61;
+    --md-code-hl-keyword-color:        #C691E9;
+    --md-code-hl-string-color:         #C3E88D;
+    --md-code-hl-name-color:           #C3CEE3;
+    --md-code-hl-operator-color:       #C3CEE3;
+    --md-code-hl-punctuation-color:    #89DDFF;
+    --md-code-hl-comment-color:        #546E7A;
+    --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+    --md-code-hl-variable-color:       var(--md-default-fg-color--light);
+
+    --md-typeset-color:                var(--md-default-fg-color);
+
+    --md-typeset-a-color:              var(--shrimp);
+
+    --md-typeset-mark-color:           var(--md-default-fg-color--light);
+
+    --md-typeset-del-color:            hsla(6, 90%, 60%, 0.15);
+    --md-typeset-ins-color:            hsla(150, 90%, 44%, 0.15);
+
+    --md-typeset-kbd-color:            hsla(0, 0%, 98%, 1);
+    --md-typeset-kbd-accent-color:     hsla(0, 100%, 100%, 1);
+    --md-typeset-kbd-border-color:     hsla(0, 0%, 72%, 1);
+
+    --md-admonition-fg-color:          var(--md-default-fg-color);
+    --md-admonition-bg-color:          var(--md-default-bg-color);
+
+    --md-footer-fg-color:              hsla(0, 0%, 80%, 1);
+    --md-footer-fg-color--light:       hsla(0, 0%, 80%, 0.7);
+    --md-footer-fg-color--lighter:     hsla(0, 0%, 80%, 0.3);
+    --md-footer-bg-color:              #263238;
+    --md-footer-bg-color--dark:        hsla(0, 0%, 0%, 0.06);
+}
+
 [data-md-color-scheme="ddoo-dark"] {
+    --md-default-fg-color:               hsla(0, 0%, 90%, 0.87);
+    --md-default-fg-color--light:        hsla(0, 0%, 90%, 0.87);
+    --md-default-fg-color--lighter:      hsla(0, 0%, 98%, 0.32);
+    --md-default-fg-color--lightest:     hsla(0, 0%, 100%, 0.07);
+    --md-default-bg-color:               #131313;
+    --md-default-bg-color--light:        hsla(0, 0%, 20%, 0.7);
+    --md-default-bg-color--lighter:      hsla(0, 0%, 20%, 0.3);
+    --md-default-bg-color--lightest:     hsla(0, 0%, 20%, 0.12);
+
+    --md-primary-fg-color:               #0c0c0c;
+    --md-primary-fg-color--light:        hsla(0, 0%, 20%, 0.7);
+    --md-primary-fg-color--dark:         hsla(0, 0%, 20%, 0.7);
+    --md-primary-bg-color:               hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
+
+    --md-accent-fg-color:                var(--shrimp);
+    --md-accent-fg-color--transparent:   var(--shrimp-transparent);
+    --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+
+    --md-code-fg-color:                var(--md-default-fg-color);
+    --md-code-bg-color:                var(--md-primary-fg-color);
+
+    --md-code-hl-color:                var(--md-default-fg-color);
+    --md-code-hl-number-color:         hsla(0, 67%, 50%, 1);
+    --md-code-hl-special-color:        hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color:       hsla(291, 45%, 50%, 1);
+    --md-code-hl-constant-color:       hsla(250, 63%, 60%, 1);
+    --md-code-hl-keyword-color:        hsla(219, 54%, 51%, 1);
+    --md-code-hl-string-color:         hsla(150, 63%, 30%, 1);
+    --md-code-hl-name-color:           var(--md-code-fg-color);
+    --md-code-hl-operator-color:       var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);
+    --md-code-hl-comment-color:        var(--md-default-fg-color--light);
+    --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+    --md-code-hl-variable-color:       var(--md-default-fg-color--light);
+
+    --md-typeset-color:                var(--md-default-fg-color);
+
+    --md-typeset-a-color:              var(--shrimp);
+
+    --md-typeset-mark-color:           var(--md-default-fg-color--light);
+
+    --md-typeset-del-color:            hsla(6, 90%, 60%, 0.15);
+    --md-typeset-ins-color:            hsla(150, 90%, 44%, 0.15);
+
+    --md-typeset-kbd-color:            hsla(0, 0%, 98%, 1);
+    --md-typeset-kbd-accent-color:     hsla(0, 100%, 100%, 1);
+    --md-typeset-kbd-border-color:     hsla(0, 0%, 72%, 1);
+
+    --md-admonition-fg-color:          var(--md-default-fg-color);
+    --md-admonition-bg-color:          var(--md-default-bg-color);
+
+    --md-footer-fg-color:              hsla(0, 0%, 80%, 1);
+    --md-footer-fg-color--light:       hsla(0, 0%, 80%, 0.7);
+    --md-footer-fg-color--lighter:     hsla(0, 0%, 80%, 0.3);
+    --md-footer-bg-color:              #0c0c0c;
+    --md-footer-bg-color--dark:        hsla(0, 0%, 0%, 0.06);
+}
+
+[data-md-color-scheme="ddoo-dark2"] {
     --md-primary-fg-color: #0B0B0B;
 
     --md-default-fg-color: #c1c1c1;
-    --md-default-fg-color--light: #dedede;
+    --md-default-fg-color--light: white;
     --md-default-fg-color--lighter: #ececec;
-    --md-default-fg-color--lightest: #ffffff;
+    --md-default-fg-color--lightest: #2b2b2b;
     --md-default-bg-color: #131313;
     --md-default-bg-color--light:        #c1c1c1;
     --md-default-bg-color--lighter:      #c1c1c1;
@@ -38,10 +160,9 @@
     --md-accent-bg-color:                var(--shrimp);
     --md-accent-bg-color--light:         var(--shrimp-light);
 
+    /* just text and links */
     --md-typeset-color:                var(--md-default-fg-color);
-
     --md-typeset-a-color:              var(--shrimp);
-
     --md-typeset-mark-color:           var(--shrimp);
 
     --md-typeset-kbd-color:            hsla(0, 0%, 98%, 1);
@@ -50,6 +171,9 @@
 
     --md-admonition-fg-color:          var(--md-default-fg-color);
     --md-admonition-bg-color:          var(--md-default-bg-color);
+
+    --md-code-fg-color: #C3CEE3;
+    --md-code-bg-color: #2b2b2b;
 
     --md-primary-fg-color--light: #e7e7e7;
     --md-primary-fg-color--dark: hsla(0, 0%, 100%, 1);

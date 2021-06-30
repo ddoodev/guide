@@ -17,10 +17,15 @@ theme:
         icon: fontawesome/regular/moon
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: ddoo-dark
+      scheme: ddoo-oceanic
       toggle:
         icon: material/lightbulb
         name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: ddoo-dark
+      toggle:
+        icon: material/water
+        name: Switch to oceanic mode
   features:
     - navigation.sections
     - navigation.tabs
