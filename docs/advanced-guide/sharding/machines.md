@@ -1,4 +1,4 @@
-# Sharding cross machines
+# Inter-machines sharding
 In the case of very large bots, it is not enough to shard only on one server.
 Therefore, Discordoo has a mechanism for distributing sharding instances between different servers.
 
