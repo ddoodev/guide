@@ -18,20 +18,34 @@ or, if you want to extend from the client:
 
 === "TS"
 ```ts
-import { Client as DiscordooClient } from 'discordoo/core'
+import { Client as DiscordooClient, ClientOptions } from 'discordoo/core'
+import { createApp } from 'discordoo/wrapper'
+
+interface YourCustomOptions {
+  owner?: string
+}
 
 class Client extends DiscordooClient {
-  constructor(...props) {
-    super(...props)
+  constructor(token, options?: ClientOptions<YourCustomOptions>) {
+    super(token, options)
     
-    console.log('hello from client constructor')
+    console.log(
+      'hello from client constructor!',
+      'provided custom options:',
+      options?.custom // YourCustomOptions interface used here
+    )
+  }
+  
+  customMethod(): string {
+    return 'hello world'
   }
 }
 
-const client = new Client(/* some client options */)
-
-client.useCacheProvider(/* some cache provider */)
+const client = createApp('some-discord-bot-token', { useClient: Client })
+  .gateway(/* some gateway options */)
+  .custom<YourCustomOptions>({ owner: 'very-cool-developer' })
+  .build<Client>()
 
 client.start()
-  .then(() => console.log('online!'))
+  .then(() => console.log(client.customMethod())) // hello world
 ```

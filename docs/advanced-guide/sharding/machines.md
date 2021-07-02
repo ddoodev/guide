@@ -22,7 +22,7 @@ const manager = new ShardingManager({
   machines: {
     me: 'child',
     ipc: {
-      networkHost: 'your server IP',
+      networkHost: 'your server IP', // IP of the server on which this sharding manager is running
     //networkPort: 9999, // override default port if you want
     },
     /*tls: {
@@ -53,7 +53,7 @@ const manager = new ShardingManager({
     points: [ // array of contact points to your servers
       {
         port: 8379, // optional override port 
-        host: '10.0.18.1', // your server ip (required!)
+        host: '10.0.18.1', // remote server ip (required!)
         udp: 'udp4', // optional UDP instead TCP
         childManagerOptions: { // options of the sharding manager that will be sent to the remote machine
           mode: ChildShardingModes.PROCESSES,
