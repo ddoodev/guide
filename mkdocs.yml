@@ -16,7 +16,7 @@ theme:
       toggle:
         icon: fontawesome/regular/moon
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: ""
       scheme: ddoo-oceanic
       toggle:
         icon: material/lightbulb

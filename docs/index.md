@@ -6,7 +6,7 @@ title: Hello
 Hi there! This is the Discordoo documentation. Here you will learn all the basics and internals of Discordoo.
 
 ## Where to start?
-If you are a beginner, go to the Guide tab. This is the most friendly place where you can learn how to work with Discordoo.
+If you are a beginner, go to the `Base guide` tab. This is the most friendly place where you can learn how to work with Discordoo.
 Or you can go to the Api tab, it contains a precise description for everything in Discordoo, but it wasn't intended as a good place to start.
 
 ## Important notice

@@ -1,11 +1,7 @@
 # The Discordoo guide
-Hi there! This is the Discordoo Guide(or the Guide in short). Here, you will
-learn all the basics and internals of Discordoo.
-
-On the left you can see steps. Each step introduces a new concept about the library.
-If you do 2-3 steps a day, I bet that you will know Discordoo in less than a month.
+Hi there! This is the Discordoo Guide. Here you will learn the basics of working with Discordoo and creating your own Discord bot.
 
 ## Important notice
-This guide is intended to be read by people, who know TypeScript and Node.js on
+This guide is intended to be read by people, who know TypeScript/Javascript and Node.js on
 beginner's level. We will not help you if you don't know how to use Node.js or
-write basic TypeScript code.
+write basic TypeScript/JavaScript code.
