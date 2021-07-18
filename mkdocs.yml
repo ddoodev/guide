@@ -36,6 +36,7 @@ theme:
 
 extra_css:
   - stylesheets/colors.css
+  - stylesheets/scrollbar.css
 #  - https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css
 #  - stylesheets/m-pagetransition-styles.css
 #  - //cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/github.min.css
