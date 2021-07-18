@@ -30,18 +30,23 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.sections
-    - navigation.instant
+#    - navigation.instant
     - navigation.sections
     - navigation.expand
 
 extra_css:
   - stylesheets/colors.css
- # - //cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/github.min.css
+  - //cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css
+#  - stylesheets/m-pagetransition-styles.css
+#  - //cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/github.min.css
 
 extra_javascript:
 #  - //unpkg.com/kotlin-playground@1
+  - //code.jquery.com/jquery-3.1.1.min.js
   - //cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js
+  - //cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js
   - javascripts/highlight.js
+  - javascripts/pagetransition.js
 
 markdown_extensions:
   - pymdownx.tabbed
