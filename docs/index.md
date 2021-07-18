@@ -1,5 +1,8 @@
 ---
 title: Hello
+hide:
+- navigation
+- toc
 ---
 
 # Discordoo Documentation
