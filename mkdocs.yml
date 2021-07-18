@@ -30,7 +30,7 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.sections
-#    - navigation.instant
+    - navigation.instant
     - navigation.sections
     - navigation.expand
 
