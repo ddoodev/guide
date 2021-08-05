@@ -12,7 +12,7 @@ So we have to create it.
 
 === "TS"
 ```ts
-import { ShardingManager } from 'discordoo/sharding'
+import { ShardingManager } from 'discordoo'
 
 const manager = new ShardingManager({
   file: 'C:/path/to/your/old/starting/file.js',

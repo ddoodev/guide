@@ -13,8 +13,7 @@ On each server, you must install Discordoo and create a ShardingManager in stand
 
 === "TS"
 ```ts
-import { ShardingManager } from 'discordoo/sharding'
-import { ShardingManagerModes } from 'discordoo/core'
+import { ShardingManager, ShardingManagerModes } from 'discordoo'
 
 const manager = new ShardingManager({
   file: 'C:/path/to/your/client/file.js',
@@ -43,8 +42,7 @@ On the main server you should create main ShardingManager and specify machines:
 
 === "TS"
 ```ts
-import { ShardingManager } from 'discordoo/sharding'
-import { ShardingManagerModes, ChildShardingModes } from 'discordoo/core'
+import { ShardingManager, ShardingManagerModes, ChildShardingModes } from 'discordoo'
 
 const manager = new ShardingManager({
   mode: ShardingManagerModes.MACHINES,

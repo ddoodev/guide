@@ -3,7 +3,7 @@ You can use built-in createApp function to create a client, setup providers and 
 
 === "TS"
 ```ts
-import { createApp } from 'discordoo/wrapper'
+import { createApp } from 'discordoo'
  
 const client = createApp('some-discord-bot-token')
   .cacheProvider(/* some cache provider */)
@@ -18,8 +18,7 @@ or, if you want to extend from the client:
 
 === "TS"
 ```ts
-import { Client as DiscordooClient, ClientOptions } from 'discordoo/core'
-import { createApp } from 'discordoo/wrapper'
+import { Client as DiscordooClient, ClientOptions, createApp } from 'discordoo'
 
 interface YourCustomOptions {
   owner?: string
