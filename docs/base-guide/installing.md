@@ -1,22 +1,23 @@
-# Step 1 - Installing Discordoo
+# Installing Discordoo
 In this step, you will know how to install Discordoo.
 
-Discordoo is hosted on npm and located under `discordoo` package. It contains the core of the library. However, it is
-highly recommended creating a new project from zero.
+Discordoo is located under `discordoo` package and `@discordoo` organization.
 
-To do it, execute the following script in a **new** directory:
+## Let's start
+First of all, you need to have a **node.js version 12.18** or higher. 
+If you want to use typescript in your project, **typescript version must be 4.2.2** or higher.
 
+### npm
+Currently, our package is only available on npm. So, install it:
 ```shell
-npm init @discordoo
+npm i discordoo
 ```
 
-It will ask you some questions. After a few seconds of waiting you are done! You have Discordoo installed on your PC.
+## Ecosystem
+In addition to the main package, we have others: for example, you can use the discordoo collection separately without installing discordoo. In the future, we will have several additional packages that will help you develop your bots.
 
-## Existing project
-In case you have an existing project, you can install Discordoo separately. 
-
+As I said above, the collection can be installed separately:
 ```shell
-npm install discordoo
+npm i @discordoo/collection
 ```
 
-Congratulations! You have done step 1! More adventures are coming

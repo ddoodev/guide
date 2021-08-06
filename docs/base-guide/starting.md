@@ -1,50 +1,48 @@
-# Step 2 - Starting your bot
-You can use built-in createApp function to create a client, setup providers and client options:
+# Starting your bot
+We provide the createApp function, which allows you to create a bot and add any options to it.
 
-=== "TS"
-```ts
-import { createApp } from 'discordoo'
- 
-const client = createApp('some-discord-bot-token')
-  .cacheProvider(/* some cache provider */)
-  .gateway(/* some gateway options */)
+=== "JS"
+```js
+const { createApp } = require('discordoo')
+
+const client = createApp('discord-bot-token').build()
+
+client.start()
+  .then(() => console.log('online!'))
+```
+The easiest and fastest way to create and connect a bot to Discord is shown above.
+
+But this bot can't do anything. Let's teach it how to respond to `/` commands:
+
+--- **IN DEVELOPMENT** ---
+
+=== "JS"
+
+```js
+const { createApp, AdvancedEventsGatewayProvider } = require('discordoo')
+
+const client = createApp('discord-bot-token')
+  .gatewayProvider(AdvancedEventsGatewayProvider)
   .build()
- 
-client.start()
-    .then(() => console.log('online!'))
-```
 
-or, if you want to extend from the client:
-
-=== "TS"
-```ts
-import { Client as DiscordooClient, ClientOptions, createApp } from 'discordoo'
-
-interface YourCustomOptions {
-  owner?: string
-}
-
-class Client extends DiscordooClient {
-  constructor(token, options?: ClientOptions<YourCustomOptions>) {
-    super(token, options)
-    
-    console.log(
-      'hello from client constructor!',
-      'provided custom options:',
-      options?.custom // YourCustomOptions interface used here
-    )
+client.on('interactionCreate.slashCommand', async command => {
+  if (command.name === 'ping') {
+    await command.reply('pong!')
   }
+})
+
+client.start().then(async () => {
+  const commands = [ 
+    // command names must be lower-case, 1-32 length and must not use any symbols expect a-z and -
+    { name: 'ping', description: 'pong!' }
+  ]
   
-  customMethod(): string {
-    return 'hello world'
+  if (!await client.app.commands.cache.size()) {
+    await client.app.commands.register(commands)
   }
-}
-
-const client = createApp('some-discord-bot-token', { useClient: Client })
-  .gateway(/* some gateway options */)
-  .custom<YourCustomOptions>({ owner: 'very-cool-developer' })
-  .build<Client>()
-
-client.start()
-  .then(() => console.log(client.customMethod())) // hello world
+})
 ```
+Here we use the built-in gateway provider with new events to detect `/` commands.
+After the bot connects to the discord, we check whether it has a `/` commands. If there are none, then we add them.
+We are adding global commands to the bot - they will be available on any servers where the bot is added.
+
