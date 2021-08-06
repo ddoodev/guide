@@ -33,7 +33,7 @@ client.on('interactionCreate.slashCommand', async command => {
 
 client.start().then(async () => {
   const commands = [ 
-    // command names must be lower-case, 1-32 length and must not use any symbols expect a-z and -
+    // command names can contain only a-z, numbers and -. also, they must be lower-case and up to 32 in length.
     { name: 'ping', description: 'pong!' }
   ]
   
