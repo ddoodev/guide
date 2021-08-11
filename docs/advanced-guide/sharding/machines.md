@@ -1,9 +1,9 @@
 # Inter-machines sharding
-In the case of very large bots, it is not enough to shard only on one server.
-Therefore, Discordoo has a mechanism for distributing sharding instances between different servers.
+In case of very large bots, it is not enough to shard only on one server.
+Therefore, Discordoo has a mechanism which distributes sharding instances between different servers.
 
 ## WARNING
-**THIS IS NOT IMPLEMENTED FUNCTIONALITY.**
+**THIS IS NOT IMPLEMENTED FOR NOW.**
 
 ## Preparing your servers
 You should prepare your servers to receive sharding instances. To do this, you need to open the port on which Discordoo's ShardingManager will wait for commands from the main ShardingManager. Default port is 8379.
@@ -84,4 +84,4 @@ const manager = new ShardingManager({
 
 manager.start()
 ```
-That's all!
+That's it!
