@@ -1,6 +1,6 @@
 # Sharding internals
 
-Internally, Discordoo uses `node-ipc` module for interprocess communication.
+Internally, Discordoo uses `node-ipc` module for interprocess communication. Big thanks to its [authors](https://github.com/sponsors/RIAEvangelist).
 
 Each sharding instance (process, worker or cluster) has a unique DiscordooSnowflake.
 It is similar to Discord or Twitter snowflake, but modified to suit our needs.

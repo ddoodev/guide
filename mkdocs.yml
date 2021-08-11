@@ -5,12 +5,19 @@ plugins:
   - search:
       indexing: 'sections'
   - awesome-pages
+  - i18n:
+      default_language: en
+      ignore: assets
+      languages:
+        en: English
+        ru: Русский
 
 theme:
   name: material
   logo: assets/logo.svg
   favicon: assets/favicon.png
   custom_dir: docs/overrides
+  language: en
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: ddoo-light
@@ -35,6 +42,15 @@ theme:
     - navigation.sections
     - navigation.expand
 
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Русский
+      link: /ru/
+      lang: ru
+
 extra_css:
   - stylesheets/colors.css
   - stylesheets/scrollbar.css
@@ -53,6 +69,12 @@ extra_javascript:
 
 markdown_extensions:
   - pymdownx.tabbed
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
   - meta
   - attr_list
   - toc:
