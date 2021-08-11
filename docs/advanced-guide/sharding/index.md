@@ -1,13 +1,14 @@
 # Getting started with sharding
 
-Sharding is required for bots with more than 2500 servers.
+Sharding is required for bots which have more than 2500 guilds being served.
 
 ## Creating sharding manager
 Sharding instances (processes, workers or clusters) are managed by ShardingManager.
-So we have to create it.
+It manages interprocess communication and shard distribution(between processes, machines, etc.).
+It is a sharp edge of making your bot scalable, so you have to know, how to use it correctly.
 
-1. Create a separate file for the sharding manager.
-2. Make sure that this file **is not required** in any way in the sharding instances, otherwise you will get an error about the recursive creation of the sharding manager.
+1. Create a separate file for sharding manager.
+2. Make sure that this file **is not required** in any way in the sharding instances, otherwise you will get an error about the recursive creation of sharding manager.
 3. Import sharding manager and start it:
 
 === "TS"

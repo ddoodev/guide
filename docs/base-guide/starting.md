@@ -1,5 +1,5 @@
 # Starting your bot
-We provide the createApp function, which allows you to create a bot and add any options to it.
+We provide `createApp` function, which allows you to create a bot and add any options to it.
 
 === "JS"
 ```js
@@ -12,7 +12,7 @@ client.start()
 ```
 The easiest and fastest way to create and connect a bot to Discord is shown above.
 
-But this bot can't do anything. Let's teach it how to respond to `/` commands:
+But this bot can't do anything. Let's teach it how to react to `/` commands:
 
 --- **IN DEVELOPMENT** ---
 
