@@ -3,7 +3,7 @@ hide:
 - toc
 ---
 
-# The Discordoo guide
+# The Discordoo Guide
 Hi there! This is The Discordoo Guide. Here you will learn the basics of working with Discordoo and creating your own Discord bot.
 
 ## Important notice
