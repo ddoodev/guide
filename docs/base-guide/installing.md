@@ -17,7 +17,7 @@ yarn add discordoo
 ```
 
 ## Ecosystem
-In addition to the main package, we have others: for example, you can use discordoo collection separately without installing discordoo. In the future, we will have several additional packages that will help you develop your bots.
+In addition to the main package, we have others: for example, you can use Discordoo's collection separately without installing Discordoo. In the future, we will have several additional packages that will help you develop your bots.
 
 As I said above, collection can be installed separately:
 ```shell
