@@ -36,6 +36,7 @@ main::-webkit-scrollbar-corner {
 [data-md-color-scheme="ddoo-light"] {
     --md-primary-fg-color: #f68888;
     --scrollbar-color: var(--shrimp-transparent);
+    --md-typeset-table-color: var(--shrimp);
 
     --md-accent-fg-color:                var(--shrimp);
     --md-accent-fg-color--transparent:   var(--shrimp-transparent);
@@ -70,6 +71,8 @@ main::-webkit-scrollbar-corner {
 
 [data-md-color-scheme="ddoo-oceanic"] {
     --scrollbar-color: var(--md-default-fg-color);
+    --md-typeset-table-color: var(--md-default-fg-color);
+
     --md-default-fg-color:               hsla(0, 0%, 90%, 0.87);
     --md-default-fg-color--light:        hsla(0, 0%, 90%, 0.54);
     --md-default-fg-color--lighter:      hsla(0, 0%, 90%, 0.32);
@@ -137,6 +140,8 @@ main::-webkit-scrollbar-corner {
 
 [data-md-color-scheme="ddoo-dark"] {
     --scrollbar-color: var(--md-default-fg-color--light);
+    --md-typeset-table-color: var(--md-default-fg-color--light);
+
     --md-default-fg-color:               hsla(0, 0%, 90%, 0.87);
     --md-default-fg-color--light:        hsla(0, 0%, 90%, 0.87);
     --md-default-fg-color--lighter:      hsla(0, 0%, 98%, 0.32);

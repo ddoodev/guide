@@ -2,7 +2,8 @@ site_name: Discordoo Guide
 site_url: 'https://docs.discordoo.xyz'
 
 plugins:
-  - search
+  - search:
+      indexing: 'sections'
   - awesome-pages
 
 theme:
@@ -30,7 +31,7 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.sections
-#    - navigation.instant
+    - navigation.instant
     - navigation.sections
     - navigation.expand
 
@@ -44,8 +45,8 @@ extra_css:
 extra_javascript:
 #  - //unpkg.com/kotlin-playground@1
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js
-  - https://code.jquery.com/jquery-3.6.0.min.js
-  - javascripts/load-libs.js
+#  - https://code.jquery.com/jquery-3.6.0.min.js
+#  - javascripts/load-libs.js
 #  - https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js
   - javascripts/highlight.js
   - javascripts/pagetransition.js
