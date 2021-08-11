@@ -19,7 +19,7 @@ If we have a snowflake `1128425170719486862453931925225603077` we can represent 
 000000001101100101010011101010000000011011 00000000000000000000000000001011 00000000000000000000000001100011 0000000000000000000101
    number of ms since Discordoo epoch                  worker id                       shard id                    increment
 ```
-After converting it to  a binary, we can allocate individual blocks to find out the information that we used to generate this snowflake.
+After converting it to a binary, we can allocate individual blocks to find out the information that we used to generate this snowflake.
 
 We can get timestamp (generation time) from snowflake
 ```ts
