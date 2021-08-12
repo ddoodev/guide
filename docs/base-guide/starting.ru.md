@@ -26,7 +26,7 @@ const client = createApp('discord-bot-token')
   .gatewayProvider(AdvancedEventsGatewayProvider)
   .build()
 
-client.on('interactionCreate.slashCommand', async command => {
+client.on('slashCommand', async command => {
   if (command.name === 'ping') {
     await command.reply('pong!')
   }
@@ -45,7 +45,7 @@ client.start().then(async () => {
 })
 ```
 Выше мы используем встроенный gateway провайдер под названием `AdvancedEventsGatewayProvider`.
-Мы не будем останавливаться на том, что же такое gateway провайдер, достаточно знать что конкретно этот gateway провайдер добавляет новые события в клиент, такие как `interactionCreate.slashCommand`.
+Мы не будем останавливаться на том, что же такое gateway провайдер, достаточно знать что конкретно этот gateway провайдер добавляет новые события в клиент, такие как `slashCommand`.
 
 В этом коде после того как клиент подключится к Discord, мы проверяем наличие у него `/` команд. Если их нет, то создаём.
 Создаём мы глобальные команды - они будут доступны на всех серверах на которые добавят вашего бота.

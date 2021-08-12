@@ -21,7 +21,7 @@ It is similar to Discord or Twitter snowflake, but modified to suit our needs.
 **7.** In case of loss of connection with the IPC Client, the IPC Server will command the local client (bot) to self-destruct. In case of loss of connection with the IPC Server, the IPC Client will command the ShardingManager to restart this sharding instance.
 
 ## How ShardingManager and sharding instances communicating
-All communication comes down to a kind of ping-pong. They use a special standardized message type -- `IpcPacket`, which is very similar to WebSocket messages.
+All communication comes down to a kind of ping-pong. They use a special standardized message type: `IpcPacket`, which is very similar to Discord's WebSocket messages.
 
 | op                                                                      | d                | t                                                                    |
 |-------------------------------------------------------------------------|------------------|----------------------------------------------------------------------|

@@ -25,7 +25,7 @@ const client = createApp('discord-bot-token')
   .gatewayProvider(AdvancedEventsGatewayProvider)
   .build()
 
-client.on('interactionCreate.slashCommand', async command => {
+client.on('slashCommand', async command => {
   if (command.name === 'ping') {
     await command.reply('pong!')
   }
