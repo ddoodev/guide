@@ -30,7 +30,7 @@ If you are just starting using Discordoo, check `Base guide`.
 ## About library
 ### I am already using eris/djs, why should I start using ddoo?
 Discordoo is made {--because developer is tired of djs--} to make bot development more comfortable,
-save servers' resources, provide safe ways for developers of big bots to work with gateway/rest and be easy to scale, as well as to craete deep integration between user and library.
+save servers' resources, provide safe ways for developers of big bots to work with gateway/rest and be easy to scale, as well as to craete deep integration between developer and library.
 
 #### Eris saves resources of my server and D.js is really comfortable to work with.
 Eris is not as comfortable as djs and djs is not as fast as eris. Discordoo has both performance and comfortability. 
