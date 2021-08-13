@@ -19,7 +19,7 @@ The same is applied to those, who ask silly questions like "how do I answer to s
 Or on questions, that are answered in documentation, but are hard to understand and are confusing.
 
 ## About documentation
-Above, there are some sections which are dedicated to each part of the library. To make URLs the same for all languages, titles aren't translated.
+Above, there are some sections which are dedicated to each part of the library. 
 
 `Advanced guide` tab contains instructions about really hard things, like inter-machines sharding, understanding development process of Rest/Gateway/Cache providers, handling gateway events overloads etc.
 
