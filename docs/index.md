@@ -9,7 +9,7 @@ hide:
 Welcome! This is documentation of Discordoo API in English language.
 
 ## **Important!**
-Discordoo and this library are intended to be used by people, who know what they do, can write/read some basic TypeScript/JavaScript and know how to work with Node.js runtime.
+Discordoo and this documentation are intended to be used by people, who know what they do, can write/read some basic TypeScript/JavaScript and know how to work with Node.js runtime.
 If you are a beginner, you should learn language and only after start learning Discordoo.
 
 Of course, you may not learn TS/JS, however, you will not get any support on official support server.
