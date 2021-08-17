@@ -8,6 +8,9 @@ hide:
 # Discordoo Documentation
 Welcome! This is documentation of Discordoo API in English language.
 
+## WARNING
+**THIS LIBRARY IS UNDER DEVELOPMENT!** All instructions for using the library will be written after the library is released.
+
 ## **Important!**
 Discordoo and this documentation are intended to be used by people, who know what they do, can write/read some basic TypeScript/JavaScript and know how to work with Node.js runtime.
 If you are a beginner, you should learn language and only after start learning Discordoo.
