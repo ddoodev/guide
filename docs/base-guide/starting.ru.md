@@ -5,7 +5,7 @@
 ```js
 const { createApp } = require('discordoo')
 
-// discord-bot-token - токен вашего бота. не бойтесь, мы его не украдём.
+// discord-bot-token - токен вашего бота. Не бойтесь, мы его не украдём.
 const client = createApp('discord-bot-token').build()
 
 client.start()
