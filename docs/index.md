@@ -30,14 +30,14 @@ If you are just starting using Discordoo, check `Base guide`.
 ## About library
 ### I am already using eris/djs, why should I start using ddoo?
 Discordoo is made {--because creator is tired of djs--} to make bot development more comfortable,
-save servers' resources, provide safe ways for developers of big bots to work with gateway/rest and be easy to scale, as well as to craete deep integration between developer and library.
+save servers' resources, provide safe ways for developers of big bots to work with gateway/rest and be easy to scale, as well as to create deep integration between developer and library.
 
 #### Eris saves resources of my server and D.js is really comfortable to work with.
 Eris is not as comfortable as djs and djs is not as fast as eris. Discordoo has both performance and comfortability. 
 However, only Evan You can do magic, so eris is most performant of three, but ddoo isn't much slower.
 
-### How to pronounce your name?
+### How to pronounce your library name?
 Discordoo is pronounced like dɪskɔːdʊ. It can also be pronounced like `Discordo` with stress on last syllable.
 
 ## About documentation, but not for developers.
-This documentation is written by **developers** for **developers**. Prescriptivism is not our objective. Our objective is to explain **developer**, how to use the library. We won't listen to any complaints about `this sentence is hard to read and your documentation sucks!`. If you've found real mistakes in our documentation, we are happy to accept your ammends. If you find mistakes like `this sentence sounds bad` and do not do anything, don't waste your time. `It sounds bad! Fix it yourself.` - doesn't help us at all.
+This documentation is written by **developers** for **developers**. Prescriptivism is not our objective. Our objective is to explain **developer**, how to use the library. We won't listen to any complaints about `this sentence is hard to read and your documentation sucks!`. If you've found real mistakes in our documentation, we are happy to accept your amends. If you find mistakes like `this sentence sounds bad` and do not do anything, don't waste your time. `It sounds bad! Fix it yourself.` - doesn't help us at all.
