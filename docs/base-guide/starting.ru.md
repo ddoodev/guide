@@ -13,39 +13,82 @@ client.start()
 ```
 Это самый быстрый и простой способ.
 
-Вот только такой бот ничего не умеет, он только висит онлайн. Давайте научим его реагировать на `/` команды:
+Вот только такой бот ничего не умеет, он только висит онлайн. Давайте научим его реагировать на простейшие команды:
 
---- **В РАЗРАБОТКЕ** ---
-
-=== "JS"
-
+=== 'JS'
 ```js
-const { createApp, AdvancedEventsGatewayProvider } = require('discordoo')
+const { createApp } = require('discordoo')
 
-const client = createApp('discord-bot-token')
-  .gatewayProvider(AdvancedEventsGatewayProvider)
-  .build()
+const client = createApp('discord-bot-token').build()
 
-client.on('slashCommand', async command => {
-  if (command.name === 'ping') {
-    await command.reply('pong!')
-  }
-})
-
-client.start().then(async () => {
-  const commands = [ 
-    // названия команд могут содержать только английский алфавит, цифры и -. 
-    // также они должны быть написаны маленькими буквами и не могут быть длиной больше чем 32 символа.
-    { name: 'ping', description: 'pong!' }
-  ]
+client.on('messageCreate', async context => {
+  /**
+   * Здесь мы видим переменную context. 
+   * Так как Discordoo - во всех смыслах гибкая библиотека, разработчик может отключать любой кэш библиотеки.
+   * Поэтому в ивентах мы используем context вместо обычной передачи данных напрямую.
+   * В подобных переменных содержится сопутствующая информация об ивенте.
+   * В данном случае, это MessageCreateEventContext, и внутри этого контекста гарантированно передаётся 
+   * сообщение, а также его автор. Эти данные присылает сам Discord внутри ивента.
+   * Также в context передаётся канал, в котором было написано сообщение. 
+   * Но, т.к. данные о канале Discord в этом ивенте не передаёт, библиотека пытается найти канал в кэше и передать.
+   * Если библиотека не сможет найти канал сообщения в кэше, в контексте этого ивента канал передан не будет.
+   * Таким образом построена передача данных в любом ивенте - есть context, 
+   * в нём есть гарантированные и негарантированные свойства. 
+   * Узнать о содержании определённого контекста можно вбив в поиск этой документации <НазваниеИвента>EventContext,
+   * например MessageCreateEventContext.
+   * */
   
-  if (!await client.app.commands.cache.size()) {
-    await client.app.commands.register(commands)
+  const { message, author, channel, channelId } = context
+  
+  /**
+   * Кэш в Discordoo асинхронен. 
+   * Поэтому, чтообы получить какую-то доп. структуру к уже имеющейся (например автора от сообщения), 
+   * нужно вызвать асинхронную функцию получения кэша. Например: const author = await message.author().
+   * Ещё и по этой причине существует context ивентов.
+   * */
+  
+  if (author.id === '405044179182419980') { // допустим вы хотите чтобы бот реагировал только на вас.
+    
+    if (message.content === '!hello') {
+      // если вы отключили кэш каналов, придётся создавать сообщения вот так:
+      if (!channel) {
+        // channelId гарантированно передаётся в context.
+        message.client.messages.create(channelId, 'world!')
+      } else { // а если канал в кэше есть:
+        channel.send('world!')
+        // можно и так:
+        channel.messages.create('world!')
+        // и так:
+        message.client.messages.create(channel, 'world!')
+      }
+    }
   }
+  
+  /**
+   * Представим такую ситуацию: вам нужно получить какую-то сущность,
+   * но в context ивента она не передаётся. Как её получить?
+   * Например, referenced message: 
+   * */
+  
+  // получит сообщение, на которое отвечает наше, если оно есть в кэше.
+  const referencedMessage = await message.referencedMessage()
+  
+  if (referencedMessage) {
+    // referenced message - такое же сообщение, как и переданное в ивенте, отличающееся лишь свойствами. 
+    console.log(referencedMessage.content)
+    // та же ситуация - получит автора того сообщения, если он есть в кэше.
+    const referencedMessageAuthor = await referencedMessage.author()
+    
+    if (referencedMessageAuthor) {
+      console.log(referencedMessageAuthor.tag)
+    }
+  }
+  
+  /**
+   * На подобном принципе держится всё взаимодействие с библиотекой.
+   * Если что-то нужно - получи из кэша. 
+   * Если не нужно - пусть либо не хранится, либо ожидает своего звёздного часа.
+   * */
+  
 })
 ```
-Выше мы используем встроенный gateway провайдер под названием `AdvancedEventsGatewayProvider`.
-Мы не будем останавливаться на том, что же такое gateway провайдер, достаточно знать что конкретно этот gateway провайдер добавляет новые события в клиент, такие как `slashCommand`.
-
-В этом коде после того как клиент подключится к Discord, мы проверяем наличие у него `/` команд. Если их нет, то создаём.
-Создаём мы глобальные команды - они будут доступны на всех серверах на которые добавят вашего бота.
