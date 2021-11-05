@@ -42,7 +42,7 @@ client.on('messageCreate', async context => {
   
   /**
    * Кэш в Discordoo асинхронен. 
-   * Поэтому, чтообы получить какую-то доп. структуру к уже имеющейся (например автора от сообщения), 
+   * Поэтому, чтобы получить какую-то доп. структуру к уже имеющейся (например автора от сообщения), 
    * нужно вызвать асинхронную функцию получения кэша. Например: const author = await message.author().
    * Ещё и по этой причине существует context ивентов.
    * */
@@ -50,7 +50,7 @@ client.on('messageCreate', async context => {
   if (author.id === '405044179182419980') { // допустим вы хотите чтобы бот реагировал только на вас.
     
     if (message.content === '!hello') {
-      // если вы отключили кэш каналов, придётся создавать сообщения вот так:
+      // если вы отключили кэш каналов, создавать сообщения нужно вот так:
       if (!channel) {
         // channelId гарантированно передаётся в context.
         message.client.messages.create(channelId, 'world!')
@@ -74,7 +74,7 @@ client.on('messageCreate', async context => {
   const referencedMessage = await message.referencedMessage()
   
   if (referencedMessage) {
-    // referenced message - такое же сообщение, как и переданное в ивенте, отличающееся лишь свойствами. 
+    // referenced message - такое же сообщение, как и переданное в ивенте, отличающиеся лишь свойствами. 
     console.log(referencedMessage.content)
     // та же ситуация - получит автора того сообщения, если он есть в кэше.
     const referencedMessageAuthor = await referencedMessage.author()
