@@ -1,10 +1,3 @@
----
-title: Hello
-hide:
-- navigation
-- toc
----
-
 # Документация Discordoo
 Добро пожаловать! Это документация Discord API библиотеки Discordoo на русском языке.
 

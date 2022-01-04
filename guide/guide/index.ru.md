@@ -1,8 +1,3 @@
----
-hide:
-- toc
----
-
 # The Discordoo Guide для начинающих
 Привет! Вы попали на главную страницу The Discordoo Guide для начинающих.
 

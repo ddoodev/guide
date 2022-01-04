@@ -1,8 +1,3 @@
----
-hide:
-- toc
----
-
 # The Advanced Discordoo guide
 Hi there! This part of our guide is intended for developers who want to get more advanced in the development of bots using Discordoo.
 

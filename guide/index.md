@@ -1,10 +1,3 @@
----
-title: Hello
-hide:
-- navigation
-- toc
----
-
 # Discordoo Documentation
 Welcome! This is documentation of Discordoo API in English language.
 
