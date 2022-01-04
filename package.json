@@ -1,0 +1,26 @@
+{
+  "name": "ddoo-guide",
+  "version": "1.0.0",
+  "description": "Guide for discordoo",
+  "main": "index.js",
+  "scripts": {
+    "docs": "mkdir docs && npx tapok ./docs/docs.json -m -d guide"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Discordoo/discordoo-guide.git"
+  },
+  "keywords": [
+    "guide",
+    "discordoo"
+  ],
+  "author": "Mirdukkk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Discordoo/discordoo-guide/issues"
+  },
+  "homepage": "https://github.com/Discordoo/discordoo-guide#readme",
+  "devDependencies": {
+    "@discordoo/tapok": "^2.0.6"
+  }
+}

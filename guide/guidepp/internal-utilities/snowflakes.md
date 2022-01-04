@@ -9,7 +9,7 @@ We must somehow understand that this response was exactly to our request.
 That's why each message is assigned a unique identifier in the form of DiscordooSnowflake.
 With this unique identifier, we can understand that the response was exactly for us.
 
-![sharding-snowflakes](../../assets/sharding-snowflakes.png)
+![sharding-snowflakes](https://cdn.discordapp.com/attachments/531549268033404928/928052244950175744/sharding-snowflakes.png)
 
 
 ## Analyzing Snowflake
