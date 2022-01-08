@@ -6,13 +6,13 @@ Discordoo-based framework for building scalable and performant apps.
 ### Why not Eris or Discord.js?
 Eris is fast, Discord.js has neat APIs. Discordoo takes best of both worlds.
 
-You can see comparison [here](/appendix/comparison).
+You can see comparison [here]().
 
 ## Getting started
 We will quickly overview all essential parts of Discordoo library.
 ### Installing
 Discordoo is publically available on [npm](https://npmjs.com/discordoo). Install it using `npm install` command.
-```sh
+```shell
 $ npm install discordoo
 # or if you are yarn adepti
 $ yarn add discordoo
@@ -36,7 +36,7 @@ void async function main() {
 
 You can run this file using `ts-node` or your local Typescript toolchain.
 
-```sh
+```shell
 $ ts-node ./index.ts
 ```
  
@@ -91,5 +91,8 @@ What's that `ctx` variable you might ask. It is a context variable. It usually c
 :::warning 
 Due to recent Discord policies, you have to setup intents to access message's content. 
 
-See [Intents]() for details
+See [Intents](part-one/intents.md) for details
 :::
+
+## Congratulations!
+:tada: :tada: :tada: You know all basics of Discordoo! Now you can create your own Discord bots with Discordoo! Head over to next part if you want to dive into Discordoo.
