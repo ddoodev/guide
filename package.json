@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs": "mkdir docs && npx tapok ./docs/docs.json -m -d guide",
+    "docs": "npx tapok ./docs/docs.json -m -d guide",
     "build": "vitepress build docs"
   },
   "repository": {
