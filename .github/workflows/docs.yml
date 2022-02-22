@@ -4,7 +4,7 @@ name: Docgen
 on:
   push:
     branches:
-      - develop
+      - new_guide
   workflow_dispatch:
 
 jobs:
