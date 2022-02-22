@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs": "vitepress dev docs",
+    "docs": "mkdir docs && npx tapok ./docs/docs.json -m -d guide",
     "build": "vitepress build docs"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Discordoo/guide#readme",
   "devDependencies": {
+    "@discordoo/tapok": "^2.0.23",
     "vitepress": "^0.21.4"
   }
 }
