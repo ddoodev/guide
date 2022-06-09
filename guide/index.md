@@ -1,6 +1,6 @@
 # Introduction
 ## What is Discordoo?
-Discordoo is a next generation API interaction library for Discord. It was built from ground-ip
+Discordoo is a next generation API interaction library for Discord. It was built from ground-up
 to give a new look on Discord libraries - fast, scalable and easy to use. Main library only contains API bindings and is unopinonated, however we have Waifoo - opinionated
 Discordoo-based framework for building scalable and performant apps.
 ### Why not Eris or Discord.js?
@@ -88,11 +88,14 @@ client.on('messageCreate', ctx => {
 ```
 
 What's that `ctx` variable you might ask. It is a context variable. It usually contains entities and other data you might be interested in.
-:::warning 
-Due to recent Discord policies, you have to setup intents to access message's content. 
 
-See [Intents](part-one/intents.md) for details
-:::
+> :warning: Warning
+> 
+> Due to recent Discord policies, you have to setup intents to access message's content.
+>  
+> See [Intents](/docs/guide/intents) for details
 
 ## Congratulations!
-:tada: :tada: :tada: You know all basics of Discordoo! Now you can create your own Discord bots with Discordoo! Head over to next part if you want to dive into Discordoo.
+:tada: :tada: :tada:
+
+You know all basics of Discordoo! Now you can create your own Discord bots with Discordoo! Head over to next part if you want to dive into Discordoo.
