@@ -100,12 +100,10 @@ client.on('messageCreate', ctx => {
 
 What's that `ctx` variable you might ask. It is a context variable. It usually contains entities and other data you might be interested in. You can find more about specific context variables in [API Reference](https://ddoo.dev/api). Just search for `<event-name>EventContext`, for example, [`MessageCreateEventContext`](https://ddoo.dev/api/events/interfaces/MessageCreateEventContext).
 
-:::warning
-
-Due to recent Discord policies, you have to set up intents to access message's content.
-
-See [Intents](/docs/guide/intents) for details
-:::
+> :warning: Warning
+> 
+> Due to recent Discord policies, you have to set up intents to access message's content.
+> See [Intents](/docs/guide/intents) for details
 
 ## Congratulations!
 :tada: :tada: :tada: You know all basics of Discordoo! Now you can create your own Discord bots with Discordoo! Head over to next part if you want to dive into Discordoo.
