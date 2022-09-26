@@ -79,7 +79,7 @@ You should now see `ready!` message in console after a few seconds of Discordoo 
 
 ### Entities
 Server, roles, users, server members, messages and even audit logs - these are few examples of entities. 
-Entities represent a piece of data associated with Discord. Most of entities are split into two parts - actions and data.
+Entities represent a piece of data associated with Discord. Most of the entities are split into two parts - actions and data.
 
 Data is information about entity - name, unique identified(id or snowflake) and other entity-specific things.
 
@@ -103,7 +103,7 @@ What's that `ctx` variable you might ask. It is a context variable. It usually c
 :::warning 
 Due to recent Discord policies, you have to set up intents to access message's content.
 
-See [Intents](/intents) for details
+See [Intents](/docs/guide/intents) for details
 :::
 
 ## Congratulations!
