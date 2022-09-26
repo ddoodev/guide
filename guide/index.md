@@ -1,20 +1,18 @@
 # Introduction
 ## What is Discordoo?
 Discordoo is a next generation API interaction library for Discord. It was built from ground-ip
-to give a new look on Discord libraries - fast, scalable and easy to use. Main library only contains API bindings and is unopinonated, however we have Waifoo - opinionated
+to give a new look on Discord libraries - fast, scalable and easy to use. Also, we have Waifoo - opinionated
 Discordoo-based framework for building scalable and performant apps.
 ### Why not Eris or Discord.js?
 Eris is fast, Discord.js has neat APIs. Discordoo takes best of both worlds.
 
-You can see comparison [here]().
-
 ## Getting started
 We will quickly overview all essential parts of Discordoo library.
 ### Installing
-Discordoo is publically available on [npm](https://npmjs.com/discordoo). Install it using `npm install` command.
+Discordoo is publicly available on [npm](https://npmjs.com/discordoo). Install it using `npm install` command.
 ```shell
 $ npm install discordoo
-# or if you are yarn adepti
+# or if you are yarn adept
 $ yarn add discordoo
 ```
 
@@ -29,21 +27,34 @@ const token = 'MY TOP SECRET TOKEN'
 
 const client = createApp(token).build()
 
-void async function main() {
-  await client.start()
-}()
+client.start().then(() => {
+    console.log('Started!')
+})
 ```
 
-You can run this file using `ts-node` or your local Typescript toolchain.
+You can run this file using `ts-node` or your local `TypeScript` toolchain.
 
 ```shell
-$ ts-node ./index.ts
+$ npx ts-node ./index.ts
 ```
+
+You can also use Discordoo with plain JavaScript:
+```js
+const { createApp } = require('discordoo')
+const token = 'MY TOP SECRET TOKEN'
+
+const client = createApp(token).build()
+
+client.start().then(() => {
+  console.log('Started!')
+})
+```
+
  
 :tada: You now should see your bot appear online
 
 ### Events
-Since Discord is **realtime** messanger, we should receive something in realtime, shouldn't we?
+Since Discord is **realtime** messenger, we should receive something in realtime, shouldn't we?
 
 Discordoo uses concept of events. It is pretty widespread within node.js ecosystem.
 If you are unfamiliar with it, for some reason, here is quick overview:
@@ -68,9 +79,9 @@ You should now see `ready!` message in console after a few seconds of Discordoo 
 
 ### Entities
 Server, roles, users, server members, messages and even audit logs - these are few examples of entities. 
-Entities represent a piece of data associated with Discord. Most of entites are split into two parts - actions and data.
+Entities represent a piece of data associated with Discord. Most of entities are split into two parts - actions and data.
 
-Data is information about entity - name, unique identified(id or snowflake) and other entity-specific thigns.
+Data is information about entity - name, unique identified(id or snowflake) and other entity-specific things.
 
 Actions allow you to change this data. Using actions you can ban user, for example. It will change this member's data, audit logs, guild data.
 
@@ -87,9 +98,10 @@ client.on('messageCreate', ctx => {
 })
 ```
 
-What's that `ctx` variable you might ask. It is a context variable. It usually contains entities and other data you might be interested in.
+What's that `ctx` variable you might ask. It is a context variable. It usually contains entities and other data you might be interested in. You can find more about specific context variables in [API Reference](https://ddoo.dev/api). Just search for `<event-name>EventContext`, for example, [`MessageCreateEventContext`](https://ddoo.dev/api/events/interfaces/MessageCreateEventContext).
+
 :::warning 
-Due to recent Discord policies, you have to setup intents to access message's content. 
+Due to recent Discord policies, you have to set up intents to access message's content.
 
 See [Intents](part-one/intents.md) for details
 :::
