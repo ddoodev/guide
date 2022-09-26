@@ -103,7 +103,7 @@ What's that `ctx` variable you might ask. It is a context variable. It usually c
 :::warning 
 Due to recent Discord policies, you have to set up intents to access message's content.
 
-See [Intents](part-one/intents.md) for details
+See [Intents](/intents) for details
 :::
 
 ## Congratulations!
