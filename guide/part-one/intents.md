@@ -1,5 +1,5 @@
 # Intents
-Intents are an a new concept introduced by Discord in Gateway v8.
+Intents are a new concept introduced by Discord in Gateway v8.
 
 Intents allow you to only accept intents you want. However, Discord has [**privileged intents**](https://discord.com/developers/docs/topics/gateway#privileged-intents). These kind of intents
 need special approval from Discord to use, unless your bot is smaller than 100 servers.

@@ -1,6 +1,6 @@
 # Introduction
 ## What is Discordoo?
-Discordoo is a next generation API interaction library for Discord. It was built from ground-ip
+Discordoo is a next generation API interaction library for Discord. It was built from ground-up
 to give a new look on Discord libraries - fast, scalable and easy to use. Also, we have Waifoo - opinionated
 Discordoo-based framework for building scalable and performant apps.
 ### Why not Eris or Discord.js?
